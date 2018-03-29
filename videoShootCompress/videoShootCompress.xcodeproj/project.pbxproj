@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13642D682064F2EF00DFB8ED /* CWVideoShootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13642D672064F2EF00DFB8ED /* CWVideoShootController.m */; };
+		13F9DBCE2060D6FE00C1AD1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9DBCD2060D6FE00C1AD1C /* AppDelegate.m */; };
+		13F9DBD12060D6FE00C1AD1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9DBD02060D6FE00C1AD1C /* ViewController.m */; };
+		13F9DBD42060D6FE00C1AD1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F9DBD22060D6FE00C1AD1C /* Main.storyboard */; };
+		13F9DBD62060D6FE00C1AD1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F9DBD52060D6FE00C1AD1C /* Assets.xcassets */; };
+		13F9DBD92060D6FE00C1AD1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F9DBD72060D6FE00C1AD1C /* LaunchScreen.storyboard */; };
+		13F9DBDC2060D6FE00C1AD1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9DBDB2060D6FE00C1AD1C /* main.m */; };
+		13F9DBE62060D6FE00C1AD1C /* videoShootCompressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9DBE52060D6FE00C1AD1C /* videoShootCompressTests.m */; };
+		13F9DBF12060D6FE00C1AD1C /* videoShootCompressUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9DBF02060D6FE00C1AD1C /* videoShootCompressUITests.m */; };
+		13F9DC002060DC4B00C1AD1C /* CAShapeLayer+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9DBFF2060DC4B00C1AD1C /* CAShapeLayer+Progress.m */; };
+		DD513E0620660C1700330431 /* CWVideoRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = DD513E0520660C1700330431 /* CWVideoRecord.m */; };
+		DD513E09206630B400330431 /* CWVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD513E08206630B400330431 /* CWVideoView.m */; };
+		DD513E0C2067595600330431 /* CWVideoAssetWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = DD513E0B2067595600330431 /* CWVideoAssetWrite.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13F9DBE22060D6FE00C1AD1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F9DBC12060D6FE00C1AD1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13F9DBC82060D6FE00C1AD1C;
+			remoteInfo = videoShootCompress;
+		};
+		13F9DBED2060D6FE00C1AD1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F9DBC12060D6FE00C1AD1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13F9DBC82060D6FE00C1AD1C;
+			remoteInfo = videoShootCompress;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13642D662064F2EF00DFB8ED /* CWVideoShootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWVideoShootController.h; sourceTree = "<group>"; };
+		13642D672064F2EF00DFB8ED /* CWVideoShootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWVideoShootController.m; sourceTree = "<group>"; };
+		13F9DBC92060D6FE00C1AD1C /* videoShootCompress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoShootCompress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F9DBCC2060D6FE00C1AD1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13F9DBCD2060D6FE00C1AD1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13F9DBCF2060D6FE00C1AD1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		13F9DBD02060D6FE00C1AD1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13F9DBD32060D6FE00C1AD1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13F9DBD52060D6FE00C1AD1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13F9DBD82060D6FE00C1AD1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13F9DBDA2060D6FE00C1AD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F9DBDB2060D6FE00C1AD1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13F9DBE12060D6FE00C1AD1C /* videoShootCompressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoShootCompressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F9DBE52060D6FE00C1AD1C /* videoShootCompressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = videoShootCompressTests.m; sourceTree = "<group>"; };
+		13F9DBE72060D6FE00C1AD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F9DBEC2060D6FE00C1AD1C /* videoShootCompressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoShootCompressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F9DBF02060D6FE00C1AD1C /* videoShootCompressUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = videoShootCompressUITests.m; sourceTree = "<group>"; };
+		13F9DBF22060D6FE00C1AD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F9DBFE2060DC4B00C1AD1C /* CAShapeLayer+Progress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+Progress.h"; sourceTree = "<group>"; };
+		13F9DBFF2060DC4B00C1AD1C /* CAShapeLayer+Progress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+Progress.m"; sourceTree = "<group>"; };
+		DD513E0420660C1700330431 /* CWVideoRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWVideoRecord.h; sourceTree = "<group>"; };
+		DD513E0520660C1700330431 /* CWVideoRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWVideoRecord.m; sourceTree = "<group>"; };
+		DD513E07206630B400330431 /* CWVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWVideoView.h; sourceTree = "<group>"; };
+		DD513E08206630B400330431 /* CWVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWVideoView.m; sourceTree = "<group>"; };
+		DD513E0A2067595600330431 /* CWVideoAssetWrite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWVideoAssetWrite.h; sourceTree = "<group>"; };
+		DD513E0B2067595600330431 /* CWVideoAssetWrite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CWVideoAssetWrite.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13F9DBC62060D6FE00C1AD1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F9DBDE2060D6FE00C1AD1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F9DBE92060D6FE00C1AD1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13F9DBC02060D6FE00C1AD1C = {
+			isa = PBXGroup;
+			children = (
+				13F9DBCB2060D6FE00C1AD1C /* videoShootCompress */,
+				13F9DBE42060D6FE00C1AD1C /* videoShootCompressTests */,
+				13F9DBEF2060D6FE00C1AD1C /* videoShootCompressUITests */,
+				13F9DBCA2060D6FE00C1AD1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13F9DBCA2060D6FE00C1AD1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13F9DBC92060D6FE00C1AD1C /* videoShootCompress.app */,
+				13F9DBE12060D6FE00C1AD1C /* videoShootCompressTests.xctest */,
+				13F9DBEC2060D6FE00C1AD1C /* videoShootCompressUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13F9DBCB2060D6FE00C1AD1C /* videoShootCompress */ = {
+			isa = PBXGroup;
+			children = (
+				13F9DBCC2060D6FE00C1AD1C /* AppDelegate.h */,
+				13F9DBCD2060D6FE00C1AD1C /* AppDelegate.m */,
+				13F9DBCF2060D6FE00C1AD1C /* ViewController.h */,
+				13F9DBD02060D6FE00C1AD1C /* ViewController.m */,
+				DD513E0320660BA000330431 /* videoRecord */,
+				13642D662064F2EF00DFB8ED /* CWVideoShootController.h */,
+				13642D672064F2EF00DFB8ED /* CWVideoShootController.m */,
+				13F9DBFE2060DC4B00C1AD1C /* CAShapeLayer+Progress.h */,
+				13F9DBFF2060DC4B00C1AD1C /* CAShapeLayer+Progress.m */,
+				13F9DBD22060D6FE00C1AD1C /* Main.storyboard */,
+				13F9DBD52060D6FE00C1AD1C /* Assets.xcassets */,
+				13F9DBD72060D6FE00C1AD1C /* LaunchScreen.storyboard */,
+				13F9DBDA2060D6FE00C1AD1C /* Info.plist */,
+				13F9DBDB2060D6FE00C1AD1C /* main.m */,
+			);
+			path = videoShootCompress;
+			sourceTree = "<group>";
+		};
+		13F9DBE42060D6FE00C1AD1C /* videoShootCompressTests */ = {
+			isa = PBXGroup;
+			children = (
+				13F9DBE52060D6FE00C1AD1C /* videoShootCompressTests.m */,
+				13F9DBE72060D6FE00C1AD1C /* Info.plist */,
+			);
+			path = videoShootCompressTests;
+			sourceTree = "<group>";
+		};
+		13F9DBEF2060D6FE00C1AD1C /* videoShootCompressUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13F9DBF02060D6FE00C1AD1C /* videoShootCompressUITests.m */,
+				13F9DBF22060D6FE00C1AD1C /* Info.plist */,
+			);
+			path = videoShootCompressUITests;
+			sourceTree = "<group>";
+		};
+		DD513E0320660BA000330431 /* videoRecord */ = {
+			isa = PBXGroup;
+			children = (
+				DD513E0A2067595600330431 /* CWVideoAssetWrite.h */,
+				DD513E0B2067595600330431 /* CWVideoAssetWrite.m */,
+				DD513E0420660C1700330431 /* CWVideoRecord.h */,
+				DD513E0520660C1700330431 /* CWVideoRecord.m */,
+				DD513E07206630B400330431 /* CWVideoView.h */,
+				DD513E08206630B400330431 /* CWVideoView.m */,
+			);
+			path = videoRecord;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13F9DBC82060D6FE00C1AD1C /* videoShootCompress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F9DBF52060D6FE00C1AD1C /* Build configuration list for PBXNativeTarget "videoShootCompress" */;
+			buildPhases = (
+				13F9DBC52060D6FE00C1AD1C /* Sources */,
+				13F9DBC62060D6FE00C1AD1C /* Frameworks */,
+				13F9DBC72060D6FE00C1AD1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = videoShootCompress;
+			productName = videoShootCompress;
+			productReference = 13F9DBC92060D6FE00C1AD1C /* videoShootCompress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13F9DBE02060D6FE00C1AD1C /* videoShootCompressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F9DBF82060D6FE00C1AD1C /* Build configuration list for PBXNativeTarget "videoShootCompressTests" */;
+			buildPhases = (
+				13F9DBDD2060D6FE00C1AD1C /* Sources */,
+				13F9DBDE2060D6FE00C1AD1C /* Frameworks */,
+				13F9DBDF2060D6FE00C1AD1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13F9DBE32060D6FE00C1AD1C /* PBXTargetDependency */,
+			);
+			name = videoShootCompressTests;
+			productName = videoShootCompressTests;
+			productReference = 13F9DBE12060D6FE00C1AD1C /* videoShootCompressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13F9DBEB2060D6FE00C1AD1C /* videoShootCompressUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F9DBFB2060D6FE00C1AD1C /* Build configuration list for PBXNativeTarget "videoShootCompressUITests" */;
+			buildPhases = (
+				13F9DBE82060D6FE00C1AD1C /* Sources */,
+				13F9DBE92060D6FE00C1AD1C /* Frameworks */,
+				13F9DBEA2060D6FE00C1AD1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13F9DBEE2060D6FE00C1AD1C /* PBXTargetDependency */,
+			);
+			name = videoShootCompressUITests;
+			productName = videoShootCompressUITests;
+			productReference = 13F9DBEC2060D6FE00C1AD1C /* videoShootCompressUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13F9DBC12060D6FE00C1AD1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = vsc;
+				TargetAttributes = {
+					13F9DBC82060D6FE00C1AD1C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					13F9DBE02060D6FE00C1AD1C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13F9DBC82060D6FE00C1AD1C;
+					};
+					13F9DBEB2060D6FE00C1AD1C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13F9DBC82060D6FE00C1AD1C;
+					};
+				};
+			};
+			buildConfigurationList = 13F9DBC42060D6FE00C1AD1C /* Build configuration list for PBXProject "videoShootCompress" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13F9DBC02060D6FE00C1AD1C;
+			productRefGroup = 13F9DBCA2060D6FE00C1AD1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13F9DBC82060D6FE00C1AD1C /* videoShootCompress */,
+				13F9DBE02060D6FE00C1AD1C /* videoShootCompressTests */,
+				13F9DBEB2060D6FE00C1AD1C /* videoShootCompressUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13F9DBC72060D6FE00C1AD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F9DBD92060D6FE00C1AD1C /* LaunchScreen.storyboard in Resources */,
+				13F9DBD62060D6FE00C1AD1C /* Assets.xcassets in Resources */,
+				13F9DBD42060D6FE00C1AD1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F9DBDF2060D6FE00C1AD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F9DBEA2060D6FE00C1AD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13F9DBC52060D6FE00C1AD1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F9DBD12060D6FE00C1AD1C /* ViewController.m in Sources */,
+				13642D682064F2EF00DFB8ED /* CWVideoShootController.m in Sources */,
+				DD513E0C2067595600330431 /* CWVideoAssetWrite.m in Sources */,
+				DD513E0620660C1700330431 /* CWVideoRecord.m in Sources */,
+				13F9DBDC2060D6FE00C1AD1C /* main.m in Sources */,
+				13F9DC002060DC4B00C1AD1C /* CAShapeLayer+Progress.m in Sources */,
+				13F9DBCE2060D6FE00C1AD1C /* AppDelegate.m in Sources */,
+				DD513E09206630B400330431 /* CWVideoView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F9DBDD2060D6FE00C1AD1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F9DBE62060D6FE00C1AD1C /* videoShootCompressTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F9DBE82060D6FE00C1AD1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F9DBF12060D6FE00C1AD1C /* videoShootCompressUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13F9DBE32060D6FE00C1AD1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13F9DBC82060D6FE00C1AD1C /* videoShootCompress */;
+			targetProxy = 13F9DBE22060D6FE00C1AD1C /* PBXContainerItemProxy */;
+		};
+		13F9DBEE2060D6FE00C1AD1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13F9DBC82060D6FE00C1AD1C /* videoShootCompress */;
+			targetProxy = 13F9DBED2060D6FE00C1AD1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13F9DBD22060D6FE00C1AD1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13F9DBD32060D6FE00C1AD1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13F9DBD72060D6FE00C1AD1C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13F9DBD82060D6FE00C1AD1C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13F9DBF32060D6FE00C1AD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		13F9DBF42060D6FE00C1AD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13F9DBF62060D6FE00C1AD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = videoShootCompress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whxx.videoShootCompress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13F9DBF72060D6FE00C1AD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = videoShootCompress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whxx.videoShootCompress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13F9DBF92060D6FE00C1AD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9KDBVDT7;
+				INFOPLIST_FILE = videoShootCompressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whxx.videoShootCompressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoShootCompress.app/videoShootCompress";
+			};
+			name = Debug;
+		};
+		13F9DBFA2060D6FE00C1AD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9KDBVDT7;
+				INFOPLIST_FILE = videoShootCompressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whxx.videoShootCompressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/videoShootCompress.app/videoShootCompress";
+			};
+			name = Release;
+		};
+		13F9DBFC2060D6FE00C1AD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9KDBVDT7;
+				INFOPLIST_FILE = videoShootCompressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whxx.videoShootCompressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = videoShootCompress;
+			};
+			name = Debug;
+		};
+		13F9DBFD2060D6FE00C1AD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DB9KDBVDT7;
+				INFOPLIST_FILE = videoShootCompressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whxx.videoShootCompressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = videoShootCompress;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13F9DBC42060D6FE00C1AD1C /* Build configuration list for PBXProject "videoShootCompress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F9DBF32060D6FE00C1AD1C /* Debug */,
+				13F9DBF42060D6FE00C1AD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13F9DBF52060D6FE00C1AD1C /* Build configuration list for PBXNativeTarget "videoShootCompress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F9DBF62060D6FE00C1AD1C /* Debug */,
+				13F9DBF72060D6FE00C1AD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13F9DBF82060D6FE00C1AD1C /* Build configuration list for PBXNativeTarget "videoShootCompressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F9DBF92060D6FE00C1AD1C /* Debug */,
+				13F9DBFA2060D6FE00C1AD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13F9DBFB2060D6FE00C1AD1C /* Build configuration list for PBXNativeTarget "videoShootCompressUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F9DBFC2060D6FE00C1AD1C /* Debug */,
+				13F9DBFD2060D6FE00C1AD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13F9DBC12060D6FE00C1AD1C /* Project object */;
+}
