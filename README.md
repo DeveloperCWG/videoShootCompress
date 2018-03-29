@@ -1,0 +1,2 @@
+# videoShootCompress
+基于AVFoundation的自定义视频拍摄和压缩
